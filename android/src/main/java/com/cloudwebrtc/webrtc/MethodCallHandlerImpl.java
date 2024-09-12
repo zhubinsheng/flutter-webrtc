@@ -192,6 +192,7 @@ public class MethodCallHandlerImpl implements MethodCallHandler, StateProvider {
 
     final Options options = new Options();
     options.networkIgnoreMask = networkIgnoreMask;
+    options.disableNetworkMonitor = true;
 
     final PeerConnectionFactory.Builder factoryBuilder = PeerConnectionFactory.builder()
             .setOptions(options);
